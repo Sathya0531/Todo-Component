@@ -1,38 +1,84 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#btnControl:target {
+  border-color: blue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+  margin-top: 12px;
+  font-size: 100px;
+  font-weight: 400;
+  color: rgba(175, 47, 47, 0.15);
+  margin-bottom: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toggle-icon {
+  height: 30px;
+  width: 30px;
+}
+.outer-input-container {
+  flex-direction: row;
+  margin-left: 690px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: 50px;
+  width: 500px;
+}
+input:hover {
+  border-color: transparent;
+}
+.input-container {
+  width: 450px;
+  border-color: transparent;
+}
+.input-container:checked {
+  border-color: blue;
+}
+.event-container {
+  height: max-content;
+  width: 500px;
+  text-align: center;
+  margin-left: 690px;
+}
+.event-list {
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.radio-button {
+  border: solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border-width: 2px;
+  border-color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checked {
+  background-color: green;
+}
+.todo-label {
+  height: 20px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 690px;
+  margin-top: 50px;
+}
+.menu-button {
+  margin-right: 10px;
+  border: 2px solid grey;
+  padding: 2px;
+  height: max-content;
+}
+.status-button {
+  margin-right: 70px;
+}
+.todo-label-cancel {
+  margin-left: auto;
 }
